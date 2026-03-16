@@ -413,6 +413,25 @@ p {
     font-weight: 500;
 }
 
+.timeline-year {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 3rem 0 1.5rem 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline-year::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
 /* Contact/CTA */
 .cta-section {
     position: relative;
@@ -526,5 +545,9 @@ p {
 
     .timeline-dot {
         left: -31px;
+    }
+
+    .timeline-year {
+        margin-left: 30px;
     }
 }
