@@ -624,7 +624,11 @@ p {
     }
 
     .container {
-        width: 95%;
+        width: 92%;
+    }
+
+    .glass-card {
+        padding: 1.5rem;
     }
 
     .navbar {
@@ -716,13 +720,22 @@ p {
         padding: 1.2rem;
     }
 
+    .skills-grid,
     .projects-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .project-image-container {
-        height: 200px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .project-card {
+        max-height: none;
     }
 
     .achievement-grid {
@@ -739,18 +752,21 @@ p {
     }
 
     .timeline::before {
-        left: 0;
+        left: 10px;
     }
 
     .timeline-item {
-        margin-left: 30px;
+        margin-left: 35px;
+        padding: 1.5rem;
     }
 
     .timeline-dot {
-        left: -31px;
+        left: -32px;
+        top: 24px;
     }
 
     .timeline-year {
-        margin-left: 30px;
+        margin-left: 35px;
+        font-size: 1.1rem;
     }
 }
